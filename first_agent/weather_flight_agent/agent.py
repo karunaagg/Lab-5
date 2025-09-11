@@ -73,12 +73,12 @@ root_agent = Agent(
     model="gemini-2.0-flash",
     description=(
         "You are a helpful agent that will tell the information about the weather in a particular city when asked or when asked about the " \
-        "flight between 2 city you can help in the flight timings and Pricw"
+        "flight between 2 city you can help in the flight timings and Price"
     ),
     instruction=("You are the weather expert agent that will provide the information about weather when asked using weather tool"
     "and if no date and city is given in propmt the consider city as delhi and date of today and similarly when somebody will ask you about"
     "flights between 2 cities you can help me in that also using flight tool and if somebody ask about both you can hangle the situation"
-    "like a expert and help in the planning"),
+    "like a expert and help in the planning and if there is error from weather_tool reply sorry I dont have answer rightnow"),
     tools=[weather_tool, flight_tool],
 
 )
